@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width:device-width">
+		<title>PIZZARIA BOA</title>
+		<link rel="stylesheet" type="text/css" href="css/responsivo.css" media="all and (min-width:980px)" />
+		<link rel="stylesheet" type="text/css" href="css/topo.css" media="all and (min-width:980px)" />
+		<link rel="stylesheet" type="text/css" href="css/rodape.css" media="all and (min-width:980px)"/>
+		<link rel="stylesheet" type="text/css" href="css/menu-mobile.css"media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/mobile-responsivo.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/mobile-topo.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/mobile-rodape.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/menu-tablet.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/tablet-responsivo.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/tablet-topo.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/tablet-rodape.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"  media="all and (min-width:479px)"/>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jssor.slider-20.debug.js"></script>
+		<script type="text/javascript" src="js/jssor.slider-20.min.js"></script>
+		<script type="text/javascript" src="js/jssor.slider-20.mini.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--VOCE PRECISA DESSE SCRIPT PARA RODAR O SCRIPT ABAIXO-->
+		<script type="text/javascript">
+		/*FUNÇÃO PARA ABRIR O MENU APARTIR DO (@MEDIA 525PX)*/
+			$(function() {
+				$('.img-menu').click(function(){<!--ESSSA É A IMAGEM DOS RISCOS, ELA QUE SERA CLICADA-->
+					$('#menu-mobile').slideToggle(function(){<!--AQUI FICA O ID OU CLASS DO MENU-->
+						if ($('#menu-mobile').is (':visible')){<!--AQUI DIZ QUE O MENU FICARA VISIVEL APOS O CLIC-->
+										
+						}
+					});
+					
+				});
+			});
+			
+			
+		</script>
+		
+		
+		<script>
+			function validar(){
+				var nome = document.getElementById('nome').value;
+				if(nome == '' ){
+					alert("Digite seu nome");
+					document.getElementById('nome').style.background = red;
+					return false;
+					
+				}
+				
+			}
+			
+			
+		</script>
+	</head>
+	
+	<body>
+		<section class="container">
+			<section class="conteudo">
+			
+				<header class="topo">
+					<section class="box-topo">
+					<a href="index.html" >
+						<img src="imagens/logo-pizzaria.png" alt="" title="" class="logo" />
+					</a>
+					<div class="contatos"> 
+						<div class="info-header">
+							<p class="p-header p-espaco"> Faça seu pedido já!</p>
+							<ul>
+								<li>
+									<h2 class="titulo-header">(11)5555-5555</h2>
+								</li>
+								<li>
+									<h2 class="titulo-header">(11)9999-9999</h2>
+								</li>
+							</ul>
+							
+						</div >
+						<div class="info-header ">
+							<p class="p-header p-espaco"> Entrega a domicilio!</p>
+							<ul>
+								<li>
+									<h2 class="titulo-header">Terça a domingo</h2>
+								</li>
+								<li>
+									<h2 class="titulo-header">até as 00h</h2>
+								</li>
+							</ul>
+						</div>
+						<div class="formas">
+							<img src="imagens/formas-pagamento.png" alt="" title="" />							
+						</div>
+					</div>
+					</section>												
+					<nav class="box-menu">
+						<ul class="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="pizza.html">Pizzas</a></li>
+							<li><a href="bebidas.html">Bebidas</a></li>
+							<li><a href="contatos.html">Contato</a></li>				
+						</ul>
+					</nav>
+					<img src="imagens/menu-mobile.png" class="img-menu" /><!--ESSSA É A IMAGEM DOS RISCOS, ELA QUE SERA CLICADA-->
+					<nav id="menu-mobile"><!--MENU MOBILE-->
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>								
+						<li>
+							<a href="sobre.html">SOBRE</a>
+						</li>								
+						<li>
+							<a href="pizza.php">PIZZAS</a>
+						</li>								
+						<li>
+							<a href="bebidas.php">BEBIDAS</a>
+						</li>								
+						<li>
+							<a href="contatos.html">CONTATO</a>
+						</li>							
+					</ul>
+				</nav><!--MENU MOBILE-->
+				</header>
+				
+				<section class="banner">
+					<!-- CONTEUDO -->
+				<div id="conteudo">
+	
+					<!-- BANNER -->
+					<div id="bannerOut">
+						<span></span>
+						<div id="bannerMaster">		
+							<img src="img/01.jpg" alt="A moda da casa" class="visivel"  />
+							<img src="img/02.jpg"  alt="Pizza sabor" class="escondido"  />
+							<img src="img/03.jpg" alt="A moda do chefe" class="escondido" />
+							<img src="img/04.jpg" alt="A moda do cliente" class="escondido" />
+							<img src="img/05.jpg" alt="Pizza mussarela" class="escondido" />
+							
+						
+						</div>	
+					</div>
+	
+				</div>
+				</section>
+				
+				<div class="cadastro">
+					<form action="#" method="post" name="form" onsubmit="return validar()" >		
+						<label>
+							<span class="test" >RECEBA NOSSAS OFERTAS</span>
+							<input class="campo" type="text" name="nome" id="nome" placeholder="Digite seu nome" />
+							<input class="campo" type="email" name="email" id="email" placeholder="Email" />
+						</label>
+						<button type="submit" class="botao" >ENVIAR</button>
+					</form>
+				</div>
+				
+				<section class="quem-somos ">
+					<article class="info"><img  width="100%"  src="imagens/02.jpg" alt="" title=""/>
+					<h3 class="palavras-cont">Melhor Pizzaria da Região</h3>
+					</article>
+					
+					<article class="info info-meio"><iframe width="99.8%" height="83%" src="https://www.youtube.com/embed/_-8xdG8XSGU" frameborder="0" allowfullscreen></iframe>
+					<h3 class="palavras-cont">Pizzaria</h3>					
+					</article>
+					
+					<article class="info "><img  width="100%"  src="imagens/imagem2.jpg" alt="" title=""/>
+					<h3 class="palavras-cont">Nossa Casa</h3>					
+					</article>
+				</section>
+				
+				<!--------Rodape---->
+				<footer class="rodape">
+				<div class="onde">
+					<h2>ONDE ESTAMOS</h2>
+					<P class="av">Av.Dr.Antonio Bento, 393
+					<br>
+					"Largo Treze-São Paulo/SP"
+					<br>
+					"CEP:04821-510"
+					</P>				
+				</div>			
+			<div class="redes">
+				<a href="https://instagram.com/">
+					<img class="redes-sociais"src="imagens/Rodape1.png"/>
+				</a>
+				<a href="https://twitter.com/">
+					<img class="redes-sociais"src="imagens/Rodape2.png"/>
+				</a>
+				<a href="https://www.facebook.com/">
+				<img class="redes-sociais"src="imagens/Rodape3.png"/>
+				</a>
+				<a href="https://www.youtube.com/">
+				<img class="redes-sociais"src="imagens/Rodape4.png"/>
+				</a>
+			</div>						
+				</footer>			
+			</section>
+		</section>		
+	</body>
+</html>
+
+<!--Projeto Módulo Web Senac
+    Igor Ramos Rocha Santos
+	Data 12/09/2015
+-->

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width:device-width">
+		<title>PIZZARIA BOA</title>
+		<link rel="stylesheet" type="text/css" href="css/topo.css" media="all and (min-width:980px)" />
+		<link rel="stylesheet" type="text/css" href="css/rodape.css" media="all and (min-width:980px)"/>
+		<link rel="stylesheet" type="text/css" href="css/menu-mobile.css"media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/mobile-topo.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/mobile-rodape.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/menu-tablet.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/tablet-topo.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/tablet-rodape.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"  media="all and (min-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="css/pizza.css" media="all and (min-width:980px)"/>
+		<link rel="stylesheet" type="text/css" href="CSS/mobile-pizza.css" media="all and (max-width:479px)"/>
+		<link rel="stylesheet" type="text/css" href="CSS/tablet-pizza.css" media="all and (min-width:480px) and (max-width:979px)"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!--VOCE PRECISA DESSE SCRIPT PARA RODAR O SCRIPT ABAIXO-->
+		<script type="text/javascript">
+		/*FUNÇÃO PARA ABRIR O MENU APARTIR DO (@MEDIA 525PX)*/
+			$(function() {
+				$('.img-menu').click(function(){<!--ESSSA É A IMAGEM DOS RISCOS, ELA QUE SERA CLICADA-->
+					$('#menu-mobile').slideToggle(function(){<!--AQUI FICA O ID OU CLASS DO MENU-->
+						if ($('#menu-mobile').is (':visible')){<!--AQUI DIZ QUE O MENU FICARA VISIVEL APOS O CLIC-->
+										
+						}
+					});
+					
+				});
+			});
+			
+		</script>
+		
+		
+		<script>
+			function validar(){
+				var nome = document.getElementById('nome').value;
+				if(nome == '' ){
+					alert("Digite seu nome");
+					document.getElementById('nome').style.background = red;
+					return false;
+					
+				}
+				
+			}
+			
+			
+		</script>
+	</head>
+	
+	<body>
+		<section class="container">
+			<section class="conteudo">
+			
+				<header class="topo">
+					<section class="box-topo">
+					<a href="index.html" >
+						<img src="imagens/logo-pizzaria.png" alt="" title="" class="logo" />
+					</a>
+					<div class="contatos"> 
+						<div class="info-header">
+							<p class="p-header p-espaco"> Faça seu pedido já!</p>
+							<ul>
+								<li>
+									<h2 class="titulo-header">(11)5555-5555</h2>
+								</li>
+								<li>
+									<h2 class="titulo-header">(11)9999-9999</h2>
+								</li>
+							</ul>
+							
+						</div >
+						<div class="info-header ">
+							<p class="p-header p-espaco"> Entrega a domicilio!</p>
+							<ul>
+								<li>
+									<h2 class="titulo-header">Terça a domingo</h2>
+								</li>
+								<li>
+									<h2 class="titulo-header">até as 00h</h2>
+								</li>
+							</ul>
+						</div>
+						<div class="formas">
+							<img src="imagens/formas-pagamento.png" alt="" title="" />							
+						</div>
+					</div>
+					</section>												
+					<nav class="box-menu">
+						<ul class="menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="pizza.html">Pizzas</a></li>
+							<li><a href="bebidas.html">Bebidas</a></li>
+							<li><a href="contatos.html">Contato</a></li>				
+						</ul>
+					</nav>
+					<img src="imagens/menu-mobile.png" class="img-menu" /><!--ESSSA É A IMAGEM DOS RISCOS, ELA QUE SERA CLICADA-->
+					<nav id="menu-mobile"><!--MENU MOBILE-->
+					<ul>
+						<li>
+							<a href="index.html">HOME</a>
+						</li>								
+						<li>
+							<a href="sobre.html">SOBRE</a>
+						</li>								
+						<li>
+							<a href="pizza.html">PIZZAS</a>
+						</li>								
+						<li>
+							<a href="bebidas.html">BEBIDAS</a>
+						</li>								
+						<li>
+							<a href="contatos.html">CONTATO</a>
+						</li>							
+					</ul>
+				</nav><!--MENU MOBILE-->
+				</header>
+				<!--------Conteudo------------->
+				
+				<section class="container-pizza">
+				<h2 class="tradi">Pizzas Tradicionais</h2>
+				<h2 class="tradi1">Pizzas</h2>
+				<h3 class="doces">Pizzas Doces</h3>
+				<section class="box-pizza">
+					<article class="pizzaa">
+						<img class="b Americana"src="imagens/Americana.jpg"/>
+						<p class="nome">Americana</p>
+						<p class="sobrenome">Molho ,Mussarela, Bacon, Milho, Ovos e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Frango-Catupiry"src="imagens/Frango-Catupiry.jpg"/>
+						<p class="nome">Frango-Catupiry</p>
+						<p class="sobrenome">Molho, Mussarela, Frango, Catupiry e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Banana"src="imagens/Banana.jpg"/>
+						<p class="nome">Banana</p>
+						<p class="sobrenome">Leite Condensado, Banana, Açucar e Canela.</p>
+					</article>					
+				</section>
+				<section class="box-pizza">
+					<article class="pizzaa">
+						<img class="b Bacon"src="imagens/Bacon.jpg"/>
+						<p class="nome">Bacon</p>
+						<p class="sobrenome">Molho, Mussarela, Bacon e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Marguerita"src="imagens/Marguerita.jpg"/>
+						<p class="nome">Marguerita</p>
+						<p class="sobrenome">Molho, Mussarela, Tomate e Manjericão.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Brigadeiro"src="imagens/Brigadeiro.jpg"/>
+						<p class="nome">Brigadeiro</p>
+						<p class="sobrenome">Leite Condensado, Mussarela, Chocolate, Chocolate Granulado e Cereja.</p>
+					</article>					
+				</section>
+				<section class="box-pizza">
+					<article class="pizzaa">
+						<img class="b Brasileira"src="imagens/Brasileira.jpg"/>
+						<p class="nome">Brasileira</p>
+						<p class="sobrenome">Molho, Mussarela, Milho, Ervilha e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b POrtuguesa"src="imagens/POrtuguesa.jpg"/>
+						<p class="nome">Portuguesa</p>
+						<p class="sobrenome">Molho, Mussarela, Cebola, Ovos, Azeitonas e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b California"src="imagens/California.jpg"/>
+						<p class="nome">California</p>
+						<p class="sobrenome"> Leite Condensado, Mussarela, Figo, Goiabada, Abacaxi e Pêssego</p>
+					</article>					
+				</section>
+				<section class="box-pizza">
+					<article class="pizzaa">
+						<img class="b Calabresa"src="imagens/Calabresa.jpg"/>
+						<p class="nome">Calabresa</p>
+						<p class="sobrenome">Molho, Mussarela, Calabresa e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Quatro-queiojos"src="imagens/Quatro-queiojos.jpg"/>
+						<p class="nome">Quatro-queiojo</p>
+						<p class="sobrenome">Molho, Mussarela, Calabresa e Orégano.</p>
+					</article>
+					<article class="pizzaa">
+						<img class="b Prestgio"src="imagens/Prestigio.jpg"/>
+						<p class="nome">Prestígio</p>
+						<p class="sobrenome">Leite Condensado, Mussarela, Chocolate e Cocô.</p>
+					</article>					
+				</section>
+				</section>
+				<!--------Rodape---->
+				<footer class="rodape">
+				<div class="onde">
+					<h2>ONDE ESTAMOS</h2>
+					<P class="av">Av.Dr.Antonio Bento, 393
+					<br>
+					"Largo Treze-São Paulo/SP"
+					<br>
+					"CEP:04821-510"
+					</P>				
+				</div>			
+			<div class="redes">
+				<a href="https://instagram.com/">
+					<img class="redes-sociais"src="imagens/Rodape1.png"/>
+				</a>
+				<a href="https://twitter.com/">
+					<img class="redes-sociais"src="imagens/Rodape2.png"/>
+				</a>
+				<a href="https://www.facebook.com/">
+				<img class="redes-sociais"src="imagens/Rodape3.png"/>
+				</a>
+				<a href="https://www.youtube.com/">
+				<img class="redes-sociais"src="imagens/Rodape4.png"/>
+				</a>
+			</div>						
+				</footer>
+			</section>
+		</section>		
+	</body>
+</html>
+<!--Projeto Módulo Web Senac
+    Igor Ramos Rocha Santos
+	Data 12/09/2015
+-->
